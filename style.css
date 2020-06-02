@@ -1,0 +1,61 @@
+body {
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+
+  background-image: url("https://images.pexels.com/photos/96402/pexels-photo-96402.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+}
+#message-container {
+  width: 80%;
+  max-width: 1200px;
+  overflow: auto;
+  max-height: 520px;
+}
+
+#message-container div {
+  background-color: rgb(204, 204, 204);
+  padding: 5px;
+}
+
+#message-container div:nth-child(2n) {
+  background-color: rgb(85, 81, 81);
+  color: #fff;
+}
+
+#send-container {
+  position: fixed;
+  padding-bottom: 30px;
+  bottom: 0;
+  /* background-color: rgb(240, 206, 16); */
+  max-width: 1200px;
+  width: 60%;
+  height: 5%;
+  display: flex;
+}
+
+#message-input {
+  flex-grow: 1;
+  background-color: rgb(204, 204, 204);
+  border-color: black;
+  border-radius: 20px;
+  float: right;
+}
+
+#send-button {
+  border-radius: 10px;
+  border-color: black;
+  width: 62px;
+}
+#send-button:hover {
+  background-color: black;
+  color: #fff;
+}
